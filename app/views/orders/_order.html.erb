@@ -1,3 +1,2 @@
-<h1><%= order.name %></h1>
-<h2><%= order.number %></h2>
+<h2><%= order.name %> <%= order.number %> <%= button_to 'Delete', order, method: :delete, data: {confirm:  'Are you sure?'}  %></h2>
 <br />
