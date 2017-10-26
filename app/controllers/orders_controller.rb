@@ -1,23 +1,22 @@
 class OrdersController < ApplicationController
-  def index
-    @orders  = Order.all
-  end
+  http_basic_authenticate_with name: "admin", password: "admin", only: [:destroy]
 
   def create
-     @order = Order.new(order_params)
-    # respond_to do |format|
+    @order = Order.new(order_params)
+    respond_to do |format|
       if @order.save
-        redirect_to orders_path
-        # format.js
+        format.js
+      else
+        format.js
       end
-    # end
+    end
   end
 
   def destroy
     @order = Order.find(params[:id])
     @order.destroy
 
-    redirect_to orders_path
+    redirect_to admin_index_path
   end
 
   private

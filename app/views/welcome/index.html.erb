@@ -1,5 +1,10 @@
-<%= form_for @order do |f| %>
-    <%= f.text_field :name %>
-    <%= f.text_field :number%>
-    <%= f.submit "Create" %>
-<% end %>
+<div id="order_form" style="background: rebeccapurple;height: 100px">
+  <%= form_for @order, remote: true  do |f| %>
+      <%= f.text_field :name %>
+      <%= f.text_field :number %>
+      <%= f.submit 'Create', id: 'order_btn'%>
+  <% end %>
+</div>
+
+
+<!--здесь сайт для клиента будет отображдаться все что ему надо, формыЮ галерея, новости-->

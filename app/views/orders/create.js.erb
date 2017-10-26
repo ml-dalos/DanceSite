@@ -1,0 +1,11 @@
+document.getElementById('order_form').addEventListener('ajax:success', function (event) {
+    <% if @order.errors.any? %>
+      this.innerHTML += "ERROR "  // 1
+    document.getElementById('order_btn').disabled = false;
+    <% else %>
+      this.innerHTML = 'SUCCESS'; //2
+    <% end %>
+});
+//здесь расположена обработка аяксом ответ на форму, мне нужно знать как это будет выглядеть, то есть на место 1
+//будет вставлена надпись про ошибку и возмодноность снова ввсети инфУ, на 2 сообщен ие об успешном принятии закакаща
+//и форма исчезнет
