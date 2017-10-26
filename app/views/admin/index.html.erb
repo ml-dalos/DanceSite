@@ -1,5 +1,37 @@
-<%= render @orders %>
-
-<!--&lt;!&ndash;Это вьюха для вывода админки, сейчас на ней отобража.тся все заказы с кнопкой удалить, макет заказа находится в папке-->
-<!--views/orders/_order. Там можно стилизовать как будет отображаться отдельный заказ. Здесь  еще появятся ссылки на упрвление новостями-->
-<!--и галереей&ndash;&gt;-->
+<body>
+<div class="container"><h1>Панель администратора</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a data-toggle="tab" href="/admin">Заявки </a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#panel2">Новости</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content">
+  <div id="panel1" class="tab-pane fade in active">
+    <div class="container">
+      <h3>Список заявок:</h3>
+      <p>
+      <div class="list-group">
+        <%= render @orders %>
+      </div>
+      </p>
+    </div>
+  </div>
+  <div id="panel2" class="tab-pane fade">
+    <div class="container">
+      <h3>Панель 2</h3>
+      <p>хуй хуй хуй</p>
+    </div>
+  </div>
+</div>
+</body>

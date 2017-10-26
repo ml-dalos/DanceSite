@@ -1,0 +1,31 @@
+<%= form_for @post do |f| %>
+    <%= f.text_field :title %>
+    <%= f.text_field :image %>
+    <%= f.text_area :body %>
+    <%= f.submit 'Create', class: 'btn btn-success' %>
+<% end %>
+<div id="units">
+</div>
+
+<div class="btn-group col-lg-8" role="group">
+  <button class="btn btn-secondary button-primary" onclick="create_text()">
+    <span class="fa fa-font"></span>
+  </button>
+  <button class="btn btn-secondary button-primary" id="upload_widget_opener">
+    <span class="fa fa-photo"></span>
+  </button>
+  <button class="btn btn-secondary button-primary" onclick="create_video()">
+    <span class="fa fa-youtube-play"></span>
+  </button>
+</div>
+<script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    document.getElementById("upload_widget_opener").addEventListener("click", function () {
+        cloudinary.openUploadWidget({cloud_name: 'dg0xjrcbv', upload_preset: 't5t3uxu9'},
+            function (error, result) {
+                console.log(error, result);
+                create_image(result[0].secure_url);
+            });
+    }, false);
+</script>
