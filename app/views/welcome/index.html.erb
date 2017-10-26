@@ -2,7 +2,7 @@
   <%= form_for @order, remote: true  do |f| %>
       <%= f.text_field :name %>
       <%= f.text_field :number %>
-      <%= f.submit 'Create', id: 'order_btn'%>
+      <%= f.submit 'Create', id: 'order_btn', class: 'btn btn-success'%>
   <% end %>
 </div>
 

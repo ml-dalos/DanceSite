@@ -1,6 +1,6 @@
 document.getElementById('order_form').addEventListener('ajax:success', function (event) {
     <% if @order.errors.any? %>
-      this.innerHTML += "ERROR "  // 1
+      this.innerHTML += "ERROR "; // 1
     document.getElementById('order_btn').disabled = false;
     <% else %>
       this.innerHTML = 'SUCCESS'; //2

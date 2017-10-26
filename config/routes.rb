@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :admin, only: [:index]
   resources :orders, only: [:create, :destroy]
+  resources :posts, exept: [:show]
   root 'welcome#index'
   get 'welcome/index'
   # TODO: add page_not_found
