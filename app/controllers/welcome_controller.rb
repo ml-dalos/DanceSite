@@ -3,5 +3,8 @@ class WelcomeController < ApplicationController
     @order = Order.new
   end
 
-#   TODO add galery, news
+  def download
+     send_file("#{Rails.root}/public/files/#{params[:file_name]}", type: 'doc/docx')
+  end
+
 end

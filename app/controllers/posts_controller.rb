@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "admin"
+  http_basic_authenticate_with name: Rails.application.secrets[:login], password: Rails.application.secrets[:password]
 
   def index
     @posts = Post.all
@@ -33,7 +33,6 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
-
     redirect_to posts_path
   end
   private

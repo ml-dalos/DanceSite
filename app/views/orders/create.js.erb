@@ -1,9 +1,8 @@
-document.getElementById('order_form').addEventListener('ajax:success', function (event) {
+document.getElementById('subscribe').addEventListener('ajax:success', function (event) {
     <% if @order.errors.any? %>
-      this.innerHTML += "ERROR "; // 1
-    document.getElementById('order_btn').disabled = false;
+    document.getElementById('message-field').innerHTML = "Вы ввели неверные данные";
     <% else %>
-      this.innerHTML = 'SUCCESS'; //2
+    document.getElementById('message-field').innerHTML = 'Ждите звонка!';
     <% end %>
 });
 //здесь расположена обработка аяксом ответ на форму, мне нужно знать как это будет выглядеть, то есть на место 1
