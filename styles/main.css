@@ -1,0 +1,298 @@
+/*ЗАМЕНИТЬ  MAIN.CSS ЭТИМ ФАЙЛОМ!!!!*/
+/*ЗАМЕНИТЬ  MAIN.CSS ЭТИМ ФАЙЛОМ!!!!*/
+/*ЗАМЕНИТЬ  MAIN.CSS ЭТИМ ФАЙЛОМ!!!!*/
+/*ЗАМЕНИТЬ  MAIN.CSS ЭТИМ ФАЙЛОМ!!!!*/
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+body{
+    background: #f2f2f2;
+    font-family: "lato";
+    font-weight: 300;
+    font-size: 16px;
+    color:#555;
+    -webkit-font-smoothing:antialiased;
+    -webkit-overflow-scrolling: touch;
+    margin-top:70px;
+}
+img{
+    box-shadow: none ;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #333;
+}
+p{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+.centered{
+    text-align: center;
+}
+a{
+    color: #f85c37;
+}
+a:hover, a:focus{
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+    
+}
+hr{
+    background: #2d2d2d;
+    display: block;
+    border-radius: 2px;
+    height: 1px;
+    border-radius: 8px;
+
+/*    box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
+    border: 0;
+    border-top: 1px solid #2d2d2d;
+    margin: auto;
+    padding: 0;
+    max-width: 35px;
+    
+    
+}
+.navbar{
+  
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+}
+.navbar-inverse{
+    background: #2d2d2d;
+    border-color: #2d2d2d;
+}
+.navbar-inverse .navbar-nav> .active>a{
+    background-color:#ff7878;
+}
+.navbar-inverse .navbar-brand{
+    color: #999;
+    font-weight: bolder;
+    font-size: 25px;
+    letter-spacing:1px;
+}
+#headerwrap{
+    background: url(../img/salsa_dancing.jpg) center top no-repeat;
+    background-attachment: fixed;
+    padding-top: 25px;
+    text-align: center;
+   
+    background-position: center center;
+    min-height: 500px;
+    width: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+}
+#headerwrap h1{
+    margin-top: 100px;
+    color:#888484;
+    font-size: 70px;
+    
+    letter-spacing: 3px;
+}
+#headerwrap h2{
+    margin-top: 30px;
+    
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#up:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+#up
+{
+    width:30px;
+    display:none;
+    height:30px;
+    position:fixed;
+    bottom:50px;
+    left:20px;
+    
+     
+     opacity: 0.8;
+    z-index: 100;
+}  
+.ds{
+    width: 300px;
+    
+}
+
+.w {
+   
+    padding-top: 35px;
+}
+.w p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+    max-width: 300px;
+}
+.w h4{
+    font-size: 25px;
+      font-family: "Raleway";
+}
+#dg{
+    background-color: #979d9d;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+#dg h4{
+    font-size: 70px;
+    margin-bottom: 100px;
+}
+
+.tilt{
+   
+    margin-bottom: 20px;
+    margin: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.tilt:hover{
+    -webkit-transform:rotate(-10deg);
+    -moz-transform:rotate(-10deg);
+    -o-transform:rotate(-10deg);
+    -ms-transform:rotate(-10deg);
+    transform:rotate(-10deg);
+}
+#wb h4{
+   
+    font-weight: 900;
+}
+.wb{
+    margin-bottom: 0;
+    padding-top:35px;
+}
+#wb h1{
+    font-size: 60px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    
+}
+.im .imbg{
+    background: black;
+    opacity: 0.7;
+    width: 85%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    
+}
+
+
+.imbg h3{
+    color: white;
+    left: 3px;
+    
+}
+.im1{
+   background-image: url("../img/galery/PxuXNyB5js0.jpg");
+    
+}
+.im2{
+   background-image: url(../img/galery/rWxKwMosY6w.jpg); 
+}
+.im3{
+   background-image: url(../img/galery/322.jpg); 
+}
+.im4{
+   background-image: url(../img/galery/r6YEgXfOq7U.jpg); 
+}
+.im{
+    cursor: pointer;
+    background-size:cover;
+    width: 100%;
+    height: 100%;   
+    overflow:auto;
+    display:inline-block;   
+    position:relative;
+    border-radius: 7px;
+    margin-bottom: 7px;
+}
+.im .imt{
+    background-color: black;
+    opacity: 0.7;
+    width: 85%;
+    position: relative;
+    border-radius: 7px;
+    padding: 5px;
+    
+    margin: auto;
+    display: inline-block;
+    bottom: -250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+    display: none;
+}
+    
+.imt p{
+opacity: 1;
+    color: white;
+}
+
+#lg{
+    background: #ebebeb;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+#lg h4{
+    margin-top: 60px;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+#r{
+    background: #FF7878;
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+.navbar-brand img{
+    height: 65px;
+    margin-top: -30px;
+}
+#r h4{
+    color: white;
+    font-size: 45px;
+}
+#f{
+    background: #2d2d2d;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#f i{
+    color:#bdbdbd;
+    font-size: 30px;
+    padding: 20px;
+}
+#f i:hover{
+color: #ff7878;
+}
+
+#size{
+    margin: 20px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-width: 20px;
+    max-width: 380px;
+    max-height: 400px;
+    
+}
+
+#teach h1{
+    font-size: 60px;
+    margin-top: 60px;
+}
