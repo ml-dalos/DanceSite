@@ -1,5 +1,6 @@
 class AdminController < ApplicationController
-  # http_basic_authenticate_with name: Rails.application.secrets.login, password: Rails.application.secrets.password
+  http_basic_authenticate_with name: 'admin', password: 'admin'
+
   def index
     @orders = Order.all
   end

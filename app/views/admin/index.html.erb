@@ -5,10 +5,10 @@
       <div class="tabs">
         <ul class="nav nav-tabs">
           <li class="active">
-            <a data-toggle="tab" href="/admin">Заявки </a>
+            <%= link_to 'Заявки', admin_index_path, data_toggle: 'tab' %>
           </li>
           <li>
-            <a data-toggle="tab" href="/admin/posts">Новости</a>
+            <%= link_to 'Новости', posts_path, data_toggle: 'tab' %>
           </li>
         </ul>
       </div>
