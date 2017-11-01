@@ -6,6 +6,7 @@
 @import "about_us";
 @import "order_form";
 @import "modal";
+@import "posts";
 
 #panel1 button, p {
   float: left;
@@ -56,14 +57,15 @@ a:hover, a:focus {
 hr {
   background: #2d2d2d;
   display: block;
-  border-radius: 2px;
+
   height: 1px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   border: 0;
   border-top: 1px solid #2d2d2d;
   margin: auto;
   padding: 0;
-  max-width: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
 
@@ -141,14 +143,25 @@ hr {
 }
 
 .ds {
-  width: 200px;
+  width: 300px;
+  display: block;
+  margin: auto;
 
 }
+
 
 .w h4 {
   font-size: 25px;
   font-family: "Raleway";
 }
+.w .text-center{
+  padding-top: 10px;
+  font-size: 20px;
+  margin: auto;
+  max-width: 350px;
+}
+
+
 
 #dg {
   background-color: #979d9d;
@@ -158,6 +171,7 @@ hr {
 }
 
 #dg h4 {
+  margin-top: 50px;
   font-size: 70px;
   margin-bottom: 40px;
 }
@@ -192,7 +206,7 @@ hr {
 
 #wb h1 {
   font-size: 60px;
-  margin-top: 40px;
+  margin-top: 90px;
   margin-bottom: 60px;
 
 }
@@ -200,16 +214,16 @@ hr {
 #lg {
   background: #ebebeb;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   text-align: center;
+
 }
 
 #lg h4 {
   margin-top: 60px;
   font-size: 60px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
-
 #r {
   background: #FF7878;
   padding-bottom: 70px;
@@ -252,10 +266,20 @@ hr {
 
 #teach h1 {
   font-size: 60px;
-  margin-top: 30px;
+  margin-top: 90px;
+}
+#teach h4{
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 #message-field {
   color: white;
 }
 
+.thumbnail{
+  padding: 20px;
+}
+.thumbnail img{
+  margin-bottom: 10px;
+}

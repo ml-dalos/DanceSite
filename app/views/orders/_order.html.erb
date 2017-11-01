@@ -1,9 +1,5 @@
-<!--<h2><%= order.name %> <%= order.number %> <%= button_to 'Delete', order, method: :delete,  data: {confirm:  'Are you sure?'}  %></h2>-->
-<!--<br />-->
-
-<!--макет одного закаказа для отображения админу-->
 <div class="panel panel-default">
   <div class="panel-body">
-    <p>Имя: <%= order.name %> | Номер: <%= order.number %> </p> <%= button_to 'X',order, method: :delete,  data: {confirm:  'Are you sure?'}, class: 'close btn' %>
+    <p>Имя: <%= order.name %> | Номер: <%= order.number %> </p> <%= button_to 'X',order, method: :delete,  data: {confirm:  'Вы уверены?'}, class: 'close btn' %>
   </div>
 </div>

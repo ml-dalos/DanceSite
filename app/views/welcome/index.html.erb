@@ -10,14 +10,14 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href=""><i class="fa fa-home" aria-hidden="true"></i> Домой</a></li>
+        <li class="active"><a href="#lg"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Новости</a></li>
         <li><a href="#teach"><i class="fa fa-user" aria-hidden="true"></i> Преподаватели</a></li>
         <li><a href="#wb"><i class="fa fa-question-circle" aria-hidden="true"></i> О нас</a></li>
         <li><a href="#dg" class="disabled"><i class="fa fa-file-image-o" aria-hidden="true"></i> Галерея</a></li>
-        <li><a href="#r"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Пробный урок</a></li>
-        <li><a href="#f"><i class="fa fa-book" aria-hidden="true"></i> Контакты</a></li>
+        <li><a href="#r"><i class="fa fa-sticky-note-o" aria-hidden="true"></i> Записаться</a></li>
+        <li><a href="#f"><i class="fa fa-phone" aria-hidden="true"></i> Контакты</a></li>
         <li>
-          <a data-toggle="modal" data-target=".bd-modal-sm" href="#" href="#" class="disabled"><i class="fa fa-arrow-down" aria-hidden="true"></i>
+          <a data-toggle="modal" data-target=".bd-modal-sm" href="#" href="#" class="disabled"><i class="fa fa-book" aria-hidden="true"></i>
             Договор</a></li>
       </ul>
     </div>
@@ -26,21 +26,28 @@
 <div class="modal fade bd-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
+      <div class="modal-header">
+        <%= button_to 'X', root_path, method: :get, class: 'btn close' %>
+        <h1 class="modal-title">Скачать документы:</h1>
+
+
+      </div>
+      <hr>
       <div class="modal-body row">
-        <div class="col-sm-4"></div>
-        <div class="col-sm-5">
-          <a href=<%= welcome_download_path(file_name: 'dogovor.doc') %>><i class="fa fa-book" aria-hidden="true"></i>Договор</a><br/>
-          <a href=<%= welcome_download_path(file_name: 'anketa-zayavlenie.docx') %>><i class="fa fa-book" aria-hidden="true"></i>Анкета</a><br/>
-          <a href=<%= welcome_download_path(file_name: 'odezhda.doc') %>><i class="fa fa-book" aria-hidden="true"></i>Одежда</a></li>
+
+        <div class="col-sm-12">
+          <a href=<%= welcome_download_path(file_name: 'dogovor.doc') %>><i class="fa fa-download" aria-hidden="true"></i>
+            Договор</a><br/>
+          <a href=<%= welcome_download_path(file_name: 'anketa-zayavlenie.docx') %>>
+            <i class="fa fa-download" aria-hidden="true"></i>Анкета</a><br/>
+          <a href=<%= welcome_download_path(file_name: 'odezhda.doc') %>><i class="fa fa-download" aria-hidden="true"> </i>Одежда</a></li>
           <br/>
-          <a href=<%= welcome_download_path(file_name: 'pravila_shkoly_tantsev.docx') %>><i class="fa fa-book" aria-hidden="true"></i>Правила</a><br/>
+          <a href=<%= welcome_download_path(file_name: 'pravila_shkoly_tantsev.docx') %>><i class="fa fa-download" aria-hidden="true"></i>
+            Правила</a><br/>
         </div>
-        <div class="col-sm-3"></div>
+
       </div>
-      <div class="modal-footer">
-        <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>-->
-        <%= link_to 'Close', root_path %>
-      </div>
+
     </div>
   </div>
 </div>
@@ -61,18 +68,32 @@
 <div id="teach">
   <div class="container-fluid w" style="background-color: #eaebef">
     <div class="row centered">
-      <h1>Наши тренеры</h1>
+      <h1>Наши учителя</h1>
       <div class="col-lg-6">
         <h4>Алеся Николаевна Макаревич</h4>
         <img class="ds" src="IMG_5990.jpg">
-        <p> Мастер спорта по спортивным танцам, чемпионка РБ, с 2014 года является членом национальной сборной команды формейшн, является действующим танцором, многократная финалистка и призер Республиканских и Международных соревнований, строгий и требовательный тренер, умеющий к каждому ребенку найти индивидуальный и трепетный подход, её цель из всех учеников сделать звёзд паркета
-        </p>
+        <div class="text-center" >
+          Мастер спорта по спортивным танцам, чемпионка РБ, с 2014 года является членом национальной сборной команды
+    формейшн, является действующим танцором, многократная финалистка и призер Республиканских и Международных
+    соревнований, строгий и требовательный тренер, умеющий к каждому ребенку найти индивидуальный и трепетный
+    подход, её цель из всех учеников сделать звёзд паркета
+    </div>
+
+
+
+
       </div>
       <div class="col-lg-6">
         <h4>Анастасия Александровна Сокольчик</h4>
         <img class="ds" src="IMG_64532.jpg">
-        <p>Руководитель студии (спортивного клуба), мастер спорта, чемпионка РБ, финалист и полуфиналист республиканских и международных соревнований, выпускница Белорусского государственного университета культуры и искусства по специальности бальный танец, обучалась у лучших тренеров мира, принимает активное участие в семинарах по повышению квалификации как в Республике Беларусь, так и за её пределами, любит свою профессию, ответственно подходит к вопросу подготовки детей, добрая, но в то же время требовательная, найдёт подход к любому ученику, поможет раскрыть талант и достичь хороших результатов
-        </p>
+        <div class="text-center">
+          Руководитель студии, мастер спорта, чемпионка РБ, финалист и полуфиналист республиканских
+          и международных соревнований, выпускница Белорусского государственного университета культуры и искусства по
+          специальности бальный танец, обучалась у лучших тренеров мира, принимает активное участие в семинарах по
+          повышению квалификации как в Республике Беларусь, так и за её пределами, любит свою профессию, ответственно
+          подходит к вопросу подготовки детей, добрая, но в то же время требовательная, найдёт подход к любому ученику,
+          поможет раскрыть талант и достичь хороших результатов
+        </div>
       </div>
     </div>
   </div>
@@ -194,23 +215,23 @@
       <h4>Наши новости</h4>
       <div class="col-lg-4">
         <div class="thumbnail">
-          <h1><%= @posts[0].title  %></h1>
+          <h1><%= @posts[0].title %></h1>
           <img src="<%= @posts[0].image %>">
-          <p><%= @posts[0].body  %></p>
+          <%= @posts[0].body %>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="thumbnail">
           <h1><%= @posts[1].title %></h1>
           <img src="<%= @posts[1].image %>">
-          <p><%= @posts[1].body %></p>
+          <%= @posts[1].body %>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="thumbnail">
           <h1><%= @posts[2].title %></h1>
           <img src="<%= @posts[2].image %>">
-          <p><%= @posts[2].body %></p>
+          <%= @posts[2].body %>
         </div>
       </div>
     </div>
