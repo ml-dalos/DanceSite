@@ -149,19 +149,17 @@ hr {
 
 }
 
-
 .w h4 {
   font-size: 25px;
   font-family: "Raleway";
 }
-.w .text-center{
+
+.w .text-center {
   padding-top: 10px;
   font-size: 20px;
   margin: auto;
   max-width: 350px;
 }
-
-
 
 #dg {
   background-color: #979d9d;
@@ -224,6 +222,7 @@ hr {
   font-size: 60px;
   margin-bottom: 50px;
 }
+
 #r {
   background: #FF7878;
   padding-bottom: 70px;
@@ -268,7 +267,8 @@ hr {
   font-size: 60px;
   margin-top: 90px;
 }
-#teach h4{
+
+#teach h4 {
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -277,9 +277,47 @@ hr {
   color: white;
 }
 
-.thumbnail{
+.thumbnail {
   padding: 20px;
 }
-.thumbnail img{
+
+.thumbnail img {
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left, .navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none !important;
+  }
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav > li {
+    float: none;
+  }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in {
+    display: block !important;
+  }
 }
