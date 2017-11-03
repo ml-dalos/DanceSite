@@ -1,0 +1,29 @@
+<div class="container"><h1>Панель администратора</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <%= link_to 'Заявки', admin_index_path, data_toggle: 'tab' %>
+          </li>
+          <li>
+            <%= link_to 'Новости', posts_path, data_toggle: 'tab' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content">
+  <div id="panel1" class="tab-pane fade in active">
+    <div class="container">
+      <h3>Список заявок:</h3>
+      <p>
+      <div class="list-group">
+        <%= render @orders %>
+      </div>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,7 +1,11 @@
 class WelcomeController < ApplicationController
   def index
     @order = Order.new
+    @posts = Post.first(3)
   end
 
-#   TODO add galery, news
+  def download
+     send_file("#{Rails.root}/public/files/#{params[:file_name]}")
+  end
+
 end

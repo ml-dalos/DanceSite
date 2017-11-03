@@ -1,0 +1,38 @@
+<div class="container"><h1>Панель администратора</h1></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li>
+            <%= link_to 'Заявки', admin_index_path, data_toggle: 'tab' %>
+          </li>
+          <li class="active">
+            <%= link_to 'Новости', posts_path, data_toggle: 'tab' %>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tab-content">
+  <div id="panel1" class="tab-pane fade in active">
+    <div class="container">
+      <h3>Редактирование новостей:</h3>
+      <%= render @posts %>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    $('.upload_widget_opener').on('click', function () {
+        var id = this.id;
+        var field_id = id + '_field';
+        cloudinary.openUploadWidget({cloud_name: 'dg0xjrcbv', upload_preset: 't5t3uxu9'},
+            function (error, result) {
+                console.log(error, result);
+                document.getElementById(id).setAttribute("src", result[0].secure_url);
+                document.getElementById(field_id).setAttribute("value", result[0].secure_url);
+            });
+    });
+</script>

@@ -1,0 +1,23 @@
+<br/>
+<div class="posts panel row">
+  <%= form_for post do |f| %>
+      <div class="col-lg-3">
+        <div class="row">
+          <img data-toggle="tooltip" title="Нажмите чтобы заменить картинку" class="upload_widget_opener" id="<%= post.id %>" src="<%= post.image %>">
+        </div>
+        <div class="row">
+          <br/><%= f.submit 'Сохранить', class: 'btn btn-primary' %>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="input-group col-lg-12 ">
+          <%= f.text_field :image, id: "#{post.id}_field", type: 'hidden' %>
+          <%= f.text_field :title, class: 'form-control' %>
+        </div>
+        <div class="input-group col-lg-12 ">
+          <%= f.text_area :body, class: 'form-control', rows: 5 %>
+        </div>
+      </div>
+  <% end %>
+
+</div>

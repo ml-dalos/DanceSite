@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  http_basic_authenticate_with name: "admin", password: "admin", only: [:destroy]
+  http_basic_authenticate_with name: 'admin', password: 'admin', only: :destroy
 
   def create
     @order = Order.new(order_params)

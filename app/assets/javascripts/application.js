@@ -11,6 +11,28 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
+//
+
+$(document).ready(function () {
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('#up').fadeIn();
+        } else {
+            $('#up').fadeOut();
+        }
+    });
+    $("a[href^='#']").click(function () {
+        elementClick = $(this).attr("href")
+        destination = $(elementClick).offset().top;
+        $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
+        return false;
+    });
+
+});
