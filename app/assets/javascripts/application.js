@@ -34,5 +34,17 @@ $(document).ready(function () {
         $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
         return false;
     });
+    var a=true;
+    $(".btn-1").click(function(){
+        $(this).parent().prev().slideToggle("slow");
+        if(a==false){
+            $(this).val("Узнать больше...");
+            a=true;
+        }else{
+            $(this).val("Свернуть");
+            a=false;
+            
+        }
+    });
 
 });
