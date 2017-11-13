@@ -95,13 +95,12 @@ hr {
 }
 
 #headerwrap {
-  background: center top no-repeat;
+  background: url(salsa_dancing.jpg) center top no-repeat;
   background-attachment: fixed;
   padding-top: 25px;
   text-align: center;
-
   background-position: center center;
-  min-height: 500px;
+  height: 100%;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
