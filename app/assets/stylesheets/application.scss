@@ -7,6 +7,7 @@
 @import "order_form";
 @import "modal";
 @import "posts";
+@import "mobile";
 
 #panel1 button, p {
   float: left;
@@ -95,7 +96,7 @@ hr {
 }
 
 #headerwrap {
-  background: url(salsa_dancing.jpg) center top no-repeat;
+  background: center top no-repeat;
   background-attachment: fixed;
   padding-top: 25px;
   text-align: center;
@@ -116,16 +117,19 @@ hr {
   letter-spacing: 3px;
 }
 
-  #headerwrap h2{
-    margin-top: 10px;
-    margin-left: -28%;
-    font-size: 40px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+#headerwrap h2 {
+  margin-top: 10px;
+  margin-left: -28%;
+  font-size: 40px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-#headerwrap img{
-   height: 70%; max-width: 100%;
+
+#headerwrap img {
+  height: 70%;
+  max-width: 100%;
 }
+
 #up:hover {
   cursor: pointer;
   opacity: 0.9;
@@ -263,17 +267,21 @@ hr {
   max-height: 400px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#teach  .text-center{
-    display: none;
+
+#teach .text-center {
+  display: none;
 }
-#teach .btn-link{
-    margin:5px;
-    color: #a09f9f;
+
+#teach .btn-link {
+  margin: 5px;
+  color: #a09f9f;
 }
-#teach .btn-link:hover{
-    font-size: 15px;
-    transition: 0.5s;
+
+#teach .btn-link:hover {
+  font-size: 15px;
+  transition: 0.5s;
 }
+
 #teach h1 {
   font-size: 60px;
   margin-top: 90px;
