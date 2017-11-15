@@ -96,7 +96,6 @@ hr {
 
 #headerwrap {
   background: center top no-repeat;
-  background-attachment: fixed;
   padding-top: 25px;
   text-align: center;
   background-position: center center;
@@ -303,6 +302,10 @@ hr {
   margin-bottom: 10px;
 }
 
+
+
+
+//mobile.css
 @media screen and (max-width: 992px) {
   #headerwrap h2 {
     margin-left: auto;

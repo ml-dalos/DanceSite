@@ -5,15 +5,16 @@ default: &default
 
 development:
   <<: *default
-  database: db/development.postgresql
+  database: dance_development
+  username: alexey
+  password: 54ihanan
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.postgresql
+  database: dance_test
+  username: alexey
+  password: 54ihanan
 
 production:
   <<: *default
-  database: db/production.postgresql
+  database: dance_production

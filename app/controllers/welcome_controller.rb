@@ -5,7 +5,7 @@ class WelcomeController < ApplicationController
   end
 
   def download
-     send_file("#{Rails.root}/public/files/#{params[:file_name]}")
+    send_file("#{Rails.root}/public/files/#{params[:file_name]}")
   end
 
 end
