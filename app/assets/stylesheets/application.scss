@@ -95,11 +95,10 @@ hr {
 }
 
 #headerwrap {
-  background: center top no-repeat;
+  background: fixed center top no-repeat;
   padding-top: 25px;
   text-align: center;
-  background-position: center center;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -124,8 +123,8 @@ hr {
 }
 
 #headerwrap img {
-  height: 70%;
-  max-width: 100%;
+  width: 90%;
+  margin-top: 10%;
 }
 
 #up:hover {
