@@ -98,8 +98,7 @@ hr {
   background: fixed center top no-repeat;
   padding-top: 25px;
   text-align: center;
-  min-height: 100%;
-  width: 100%;
+  height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -110,7 +109,6 @@ hr {
   margin-top: 100px;
   color: #888484;
   font-size: 70px;
-
   letter-spacing: 3px;
 }
 
@@ -120,6 +118,7 @@ hr {
   font-size: 40px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  //padding-bottom: 7%;
 }
 
 #headerwrap img {
@@ -247,13 +246,24 @@ hr {
   padding-bottom: 20px;
 }
 
-#f i {
+#f i{
   color: #bdbdbd;
   font-size: 30px;
   padding: 20px;
 }
 
+#f .i {
+  color: #bdbdbd;
+  font-size: medium;
+  padding: 20px;
+}
+
+
 #f i:hover {
+  color: #ff7878;
+}
+
+#f .i:hover {
   color: #ff7878;
 }
 
@@ -301,16 +311,13 @@ hr {
   margin-bottom: 10px;
 }
 
-
-
-
 //mobile.css
 @media screen and (max-width: 992px) {
   #headerwrap h2 {
     margin-left: auto;
   }
   #headerwrap img {
-    min-width: 100%;
+    width: 100%;
     max-height: 300px;
   }
   .navbar-header {
@@ -350,34 +357,10 @@ hr {
   }
 }
 
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-height: 414px) {
   #headerwrap img {
-    margin-top: 100px;
-    min-width: 100%;
-    max-height: 700px;
+    margin-top: -1%;
+    width: 50%;
   }
+
 }
-
-@media screen and (max-width: 578px) {
-
-  #headerwrap img {
-    margin-top: 100px;
-    min-width: 100%;
-    max-height: 300px;
-  }
-  #headerwrap h2 {
-    margin-left: auto;
-    font-size: 20px !important;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  #headerwrap img {
-    margin-top: 100px;
-    min-width: 100%;
-    max-height: 250px;
-  }
-}
-
-

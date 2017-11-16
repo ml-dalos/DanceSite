@@ -38,7 +38,7 @@ $(document).ready(function () {
     $(".btn-1").click(function(){
         $(this).parent().prev().slideToggle("slow");
         if(a==false){
-            $(this).val("Узнать больше...");
+            $(this).val("Узнать больше");
             a=true;
         }else{
             $(this).val("Свернуть");
