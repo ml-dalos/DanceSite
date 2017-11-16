@@ -1,5 +1,5 @@
 <div class="panel panel-default">
   <div class="panel-body">
-    <p>Имя: <%= order.name %> | Номер: <%= order.number %> </p> <%= button_to 'X',order, method: :delete,  data: {confirm:  'Вы уверены?'}, class: 'close btn' %>
+    <p>Имя: <%= order.name %> | Номер: <%= order.number %> | Дата: <%= order.created_at %></p> <%= button_to 'X',order, method: :delete,  data: {confirm:  'Вы уверены?'}, class: 'close btn' %>
   </div>
 </div>
