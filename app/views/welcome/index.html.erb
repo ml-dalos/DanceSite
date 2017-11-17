@@ -22,7 +22,7 @@
     </div>
   </div>
 </div>
-<div class="modal fade bd-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+<div id="documents" class="modal fade bd-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-sm">
     <div class="modal-content">
       <div class="modal-header">
@@ -32,14 +32,26 @@
       <hr>
       <div class="modal-body row">
         <div class="col-sm-12">
-          <a href=<%= welcome_download_path(file_name: 'dogovor.doc') %>><i class="fa fa-download" aria-hidden="true"></i>
-            Договор</a><br/>
-          <a href=<%= welcome_download_path(file_name: 'anketa-zayavlenie.docx') %>>
-            <i class="fa fa-download" aria-hidden="true"></i>Анкета</a><br/>
-          <a href=<%= welcome_download_path(file_name: 'odezhda.doc') %>><i class="fa fa-download" aria-hidden="true"> </i>Одежда</a></li>
+          <%= link_to welcome_download_path(file_name: 'dogovor.doc'), method: :post do %>
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Договор
+          <% end %>
           <br/>
-          <a href=<%= welcome_download_path(file_name: 'pravila_shkoly_tantsev.docx') %>><i class="fa fa-download" aria-hidden="true"></i>
-            Правила</a><br/>
+          <%= link_to welcome_download_path(file_name: 'anketa-zayavlenie.docx'), method: :post do %>
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Анкета
+          <% end %>
+          <br/>
+          <%= link_to welcome_download_path(file_name: 'odezhda.doc'), method: :post do %>
+              <i class="fa fa-download" aria-hidden="true"> </i>
+              Одежда
+          <% end %>
+          <br/>
+          <%= link_to welcome_download_path(file_name: 'pravila_shkoly_tantsev.docx'), method: :post do %>
+              <i class="fa fa-download" aria-hidden="true"></i>
+              Правила
+          <% end %>
+          <br/>
         </div>
       </div>
     </div>
@@ -69,10 +81,14 @@
         <img class="ds" src="IMG_64532.jpg">
         <div class="text-center">
           Руководитель студии, мастер спорта, чемпионка РБ, финалист и полуфиналист республиканских
-          и международных соревнований, выпускница Белорусского государственного университета культуры и искусства по
-          специальности бальный танец, обучалась у лучших тренеров мира, принимает активное участие в семинарах по
-          повышению квалификации как в Республике Беларусь, так и за её пределами, любит свою профессию, ответственно
-          подходит к вопросу подготовки детей, добрая, но в то же время требовательная, найдёт подход к любому ученику,
+          и международных соревнований, выпускница Белорусского государственного университета культуры и
+          искусства по
+          специальности бальный танец, обучалась у лучших тренеров мира, принимает активное участие в
+          семинарах по
+          повышению квалификации как в Республике Беларусь, так и за её пределами, любит свою профессию,
+          ответственно
+          подходит к вопросу подготовки детей, добрая, но в то же время требовательная, найдёт подход к
+          любому ученику,
           поможет раскрыть талант и достичь хороших результатов
         </div>
         <div>
@@ -83,9 +99,12 @@
         <h4>Алеся Николаевна Макаревич</h4>
         <img class="ds" src="IMG_5990.jpg">
         <div class="text-center">
-          Мастер спорта по спортивным танцам, чемпионка РБ, с 2014 года является членом национальной сборной команды
-          формейшн, является действующим танцором, многократная финалистка и призер Республиканских и Международных
-          соревнований, строгий и требовательный тренер, умеющий к каждому ребенку найти индивидуальный и трепетный
+          Мастер спорта по спортивным танцам, чемпионка РБ, с 2014 года является членом национальной
+          сборной команды
+          формейшн, является действующим танцором, многократная финалистка и призер Республиканских и
+          Международных
+          соревнований, строгий и требовательный тренер, умеющий к каждому ребенку найти индивидуальный и
+          трепетный
           подход, её цель из всех учеников сделать звёзд паркета
         </div>
         <div>
@@ -110,7 +129,7 @@
               &nbsp;&nbsp;&nbsp;Медленный вальс<br>
               &nbsp;&nbsp;&nbsp;Танго<br>
               &nbsp;&nbsp;&nbsp;Венский вальс<br>
-              &nbsp;&nbsp;&nbsp;Фокстgit pull https://github.com/batkaartur/DanceSite.git masterрот<br>
+              &nbsp;&nbsp;&nbsp;Фокстрот<br>
               &nbsp;&nbsp;&nbsp;Квикстеп<br><br>
               Латиноамериканские танцы<br>
               &nbsp;&nbsp;&nbsp;Самба<br>
@@ -128,11 +147,13 @@
           <div class="overlay">
             <h2>Детская хореография</h2>
             <p>
-              Дети, занимающиеся танцами, развиваются гораздо быстрее и достигают больших успехов в жизни, чем их
-              ровесники, которые не танцуют. Много докторов признают, что программа танцев для детей дает не только
-              обучение классическим и современным направлениям, но и предлагает решение многих проблем, таких как
-              скованность, стеснительность. Танцы помогают ребенку раскрыться, почувствовать свое тело, применять
-              пластику для выражения его эмоций и чувств.
+              Дети, занимающиеся танцами, развиваются гораздо быстрее и достигают больших успехов в жизни,
+              чем их
+              ровесники, которые не танцуют. Много докторов признают, что программа танцев для детей дает
+              не только
+              обучение классическим и современным направлениям, но и предлагает решение многих проблем,
+              таких как
+              скованность, стеснительность.
             </p>
           </div>
         </div>
@@ -243,17 +264,20 @@
   <div class="container">
     <div class="row centered">
       <div class="row linkrow">
-        <div class="col-lg-3 -align-center">
+        <div class="col-lg-3">
           <a href="https://goo.gl/maps/MNXcLnNBKpE2" target="_blank" class="i">Ратомская Средняя Школа</a>
         </div>
-        <div class="col-lg-3 -align-center">
-          <a href="https://goo.gl/maps/dVpzxmTikuk" target="_blank" class="i">М-н Сокол, Средняя школа 194</a>
+        <div class="col-lg-3">
+          <a href="https://goo.gl/maps/dVpzxmTikuk" target="_blank" class="i">М-н Сокол, Средняя школа
+            194</a>
         </div>
         <div class="col-lg-3">
-          <a href="https://goo.gl/maps/GLnBpMzXkNE2" target="_blank" class="i">ДК Ритм, ул.Асаналиева 48а</a>
+          <a href="https://goo.gl/maps/GLnBpMzXkNE2" target="_blank" class="i">ДК Ритм, ул.Асаналиева
+            48а</a>
         </div>
         <div class="col-lg-3">
-          <a href="https://goo.gl/maps/KKXJMv4gHuS2" target="_blank" class="i">Замосточская средняя школа</a>
+          <a href="https://goo.gl/maps/KKXJMv4gHuS2" target="_blank" class="i">Замосточская средняя
+            школа</a>
         </div>
       </div>
       <a href="#"><i class="fa fa-facebook"></i></a>
