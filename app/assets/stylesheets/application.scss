@@ -121,9 +121,11 @@ hr {
 }
 
 #headerwrap img {
-  height: 85vh;
-  //margin-top: 10%;
-  margin-left: 35%;
+  max-height: 75vh;
+  max-width: 80vw;
+  height: 75vh;
+  margin-top: 5%;
+  margin-left: 55%;
   //margin-right: 10%;
   min-width: 90%;
 }
@@ -166,13 +168,13 @@ hr {
 
 #dg {
   background-color: #979d9d;
-  padding-top: 40px;
-  padding-bottom: 70px;
+  padding-top: 10px;
+  //padding-bottom: 5px;
   text-align: center;
 }
 
 #dg h4 {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 70px;
   margin-bottom: 40px;
 }
@@ -248,7 +250,7 @@ hr {
   padding-bottom: 20px;
 }
 
-#f i{
+#f i {
   color: #bdbdbd;
   font-size: 30px;
   padding: 20px;
@@ -317,13 +319,31 @@ hr {
 }
 
 //mobile.css
-@media screen and (max-width: 992px) {
+
+@media screen and (max-width: 414px) {
+  #headerwrap img {
+    margin: auto;
+    max-height: 200px;
+  }
+}
+@media screen and (max-height: 414px) {
+  #headerwrap img {
+    margin: auto;
+    min-width: 10vw;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   #headerwrap h2 {
     margin-left: auto;
   }
+  .fotorama__img {
+    min-width: 100vw !important;
+
+  }
   #headerwrap img {
-    height: 60vh;
-    margin-left: 5px;
+    margin: auto;
+    height: 600px;
   }
   .navbar-header {
 
@@ -332,7 +352,7 @@ hr {
   .navbar-left, .navbar-right {
     float: none !important;
   }
-  .navbar{
+  .navbar {
     display: block;
   }
   .navbar-collapse {
@@ -359,13 +379,5 @@ hr {
   }
   .collapse.in {
     display: block !important;
-  }
-}
-
-@media screen and (max-height: 414px) {
-  #headerwrap img {
-    margin-top: -1%;
-    //width: 50%;
-    height: 60vh;
   }
 }
