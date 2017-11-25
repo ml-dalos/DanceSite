@@ -35,6 +35,7 @@ $(document).ready(function () {
         return false;
     });
     var a = true;
+    var b = true;
     $(".btn-1").click(function () {
         $(this).parent().prev().slideToggle("slow");
         if (a == false) {
@@ -43,6 +44,17 @@ $(document).ready(function () {
         } else {
             $(this).val("Свернуть");
             a = false;
+
+        }
+    });
+    $(".btn-2").click(function () {
+        $(this).parent().prev().slideToggle("slow");
+        if (b == false) {
+            $(this).val("Узнать больше");
+            b = true;
+        } else {
+            $(this).val("Свернуть");
+            b = false;
 
         }
     });
