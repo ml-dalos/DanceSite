@@ -17,4 +17,6 @@ test:
 
 production:
   <<: *default
-  database: dance_production
+  database: falcon
+  username: deploy
+  password: nastyafalcon
