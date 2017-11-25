@@ -29,7 +29,8 @@
   display: block;
   position: relative;
   max-width: none;
-  width: calc(100% + 60px);
+  width: calc(50vw + 60px);
+  height: 90vh;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.45s;
   transition: opacity 0.35s, transform 0.45s;
   -webkit-transform: translate3d(-40px,0,0);
