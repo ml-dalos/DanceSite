@@ -27,6 +27,16 @@ $(document).ready(function () {
         } else {
             $('#up').fadeOut();
         }
+        var f = $("#dg").position().top;
+        var y = window.pageYOffset;              
+        var s = $("#lg").position().top;    
+        if(y>f&&y<s){                               
+                    $(".n-2").css("background","black");
+                    $(".n-2").css("transition","1s");     
+              }
+        else{                                              
+                    $(".n-2").css("background","transparent");                                                                               
+                }
     });
     $("a[href^='#']").click(function () {
         elementClick = $(this).attr("href")
@@ -34,17 +44,29 @@ $(document).ready(function () {
         $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1000);
         return false;
     });
-    var a=true;
-    $(".btn-1").click(function(){
+    var a = true;
+    var b = true;
+    $(".btn-1").click(function () {
         $(this).parent().prev().slideToggle("slow");
-        if(a==false){
-            $(this).val("Узнать больше...");
-            a=true;
-        }else{
+        if (a == false) {
+            $(this).val("Узнать больше");
+            a = true;
+        } else {
             $(this).val("Свернуть");
-            a=false;
-            
+            a = false;
+
         }
     });
+    $(".btn-2").click(function () {
+        $(this).parent().prev().slideToggle("slow");
+        if (b == false) {
+            $(this).val("Узнать больше");
+            b = true;
+        } else {
+            $(this).val("Свернуть");
+            b = false;
 
+        }
+    });
 });
+
